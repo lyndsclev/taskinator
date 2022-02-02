@@ -270,15 +270,15 @@ var loadTasks = function() {
         listItemEl.appendChild(taskActionsEl);
 
         if (tasks[i].status === "to do") {
-            listItemEl.querySelector("select[name='status-change']".selectedIndex = 0);
+            listItemEl.querySelector("select[name='status-change']").selectedIndex = 0;
             tasksToDoEl.appendChild(listItemEl);
         }
         else if (tasks[i].status === "in progress") {
-            listItemEl.querySelector("select[name='status-change']".selectedIndex = 1);
+            listItemEl.querySelector("select[name='status-change']").selectedIndex = 1;
             tasksInProgressEl.appendChild(listItemEl);
         }
         else if (tasks[i].status === "complete") {
-            listItemEl.querySelector("select[name='status-change']".selectedIndex = 2);
+            listItemEl.querySelector("select[name='status-change']").selectedIndex = 2;
             tasksCompletedEl.appendChild(listItemEl);
         }
         taskIdCounter++; 
